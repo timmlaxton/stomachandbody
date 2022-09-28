@@ -26,10 +26,13 @@ videos.forEach((video) => {
     trigger: video,
     start: "top, center",
     end: "bottom, center",
-    markers: true,
+    markers: false,
     onEnter: () => {
       gsap.to(video, { opacity: 1 });
       video.play();
     },
+    // onEnterBack: () => video.play(),
+    // onLeave: () => video.pause(),
+    // onLeaveBack: () => video.pause(),
   });
 });

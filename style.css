@@ -116,6 +116,11 @@ nav svg {
   color: var(--secondary-color);
 }
 
+.cta-main a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
 .cta-sec {
   background-color: var(--secondary-color);
   color: white;
@@ -174,4 +179,25 @@ nav svg {
 .about img {
   width: 100%;
   margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 0% 10%;
+  }
+  .videos {
+    display: flex;
+    gap: 2rem;
+  }
+  .about {
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+  }
+  .about img {
+    width: 50%;
+  }
+  .about h2 {
+    text-align: start;
+  }
 }
